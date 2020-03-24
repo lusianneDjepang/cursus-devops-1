@@ -23,6 +23,7 @@ services:
       - sonarnet
     ports:
       - "9000:9000"
+    privileged: true
     volumes:
       - ./extensions:/opt/sonarqube/extensions
       - /var/run/docker.sock:/var/run/docker.sock
