@@ -10,7 +10,6 @@ services:
       - './gitlab-logs:/var/log/gitlab'
       - './gitlab-data:/var/opt/gitlab'
     ports:
-      - '2222:22'
       - '80:80'
       - '443:443'
       - '4567:4567'
