@@ -3,8 +3,8 @@ version: '3.3'
 # password: bitnami
 services:
   jenkins:
-    # image: 'bitnami/jenkins:2'
-    image: dirane/jenkins-docker-ansible-clair
+    image: 'bitnami/jenkins:2'
+    # image: dirane/jenkins-docker-ansible-clair
     ports:
       - '8080:8080'
       - '8443:8443'
