@@ -14,6 +14,12 @@ services:
       - 'jenkins_data:/bitnami'
       - '/var/run/docker.sock:/var/run/docker.sock'
       - 'jenkins_home:/opt/'
+    networks:
+      - jenkins-network
+
+networks:
+  jenkins-network:
+    name: jenkins-network
 volumes:
   jenkins_data:
     driver: local
